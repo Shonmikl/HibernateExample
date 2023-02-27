@@ -28,10 +28,6 @@ public class Employee {
     @Column(name = "salary")
     private int salary;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "details_id")
-    private Detail empDetail;
-
     public Employee(String name, String surname, String department, int salary) {
         this.name = name;
         this.surname = surname;
